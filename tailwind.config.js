@@ -19,6 +19,16 @@ module.exports = {
         })
     ],
     daisyui: {
-        themes: false
+        themes: [
+            {
+                light: {
+                    ...require("daisyui/src/colors/themes")["[data-theme=light]"],
+                    primary: '#434141',
+                    'primary-focus': '#282727',
+                    secondary: '#D2451E',
+                    'secondary-focus': '#933015'
+                }
+            }
+        ]
     }
 }
